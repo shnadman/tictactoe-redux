@@ -1,0 +1,13 @@
+.wrapper {
+    padding-top: 60px;
+    opacity: 1;
+    height: 100vh;
+}
+
+.wrapper h1 {
+    margin-bottom: 40px;
+}
+
+#title {
+    opacity: 95;
+}
