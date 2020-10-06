@@ -1,18 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware, compose } from 'redux';
+import React from "react";
+import ReactDOM from "react-dom";
+import Root from "./Root";
 
-import App from './components/App';
-import reducers from './reducers';
-
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(reducers, composeEnhancers(applyMiddleware()));
-
+import App from "./components/App";
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.querySelector('#root')
+  <Root>
+    <App />
+  </Root>,
+  document.querySelector("#root")
 );

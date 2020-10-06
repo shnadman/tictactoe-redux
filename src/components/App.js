@@ -8,18 +8,6 @@ import './styles/App.css';
 class App extends React.Component{
 
 
-
-
-
-renderHistory=()=>{
-        return (
-            <li>
-                <button>
-                Step 1
-                 </button>);
-            </li>);
-};
-
     render() {
         const display = this.props.turn ? 'X' : 'O';
         return(
